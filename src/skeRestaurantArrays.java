@@ -8,7 +8,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.time.LocalDateTime;
 
-public class skeRestaurant {
+public class skeRestaurantArrays {
 	public static Scanner scan = new Scanner(System.in);
 	
 	public static LocalDateTime now = LocalDateTime.now();
