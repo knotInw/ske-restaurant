@@ -11,11 +11,14 @@ build/
 # BlueJ files
 *.ctxt
 
+<<<<<<< HEAD
 # Eclipse project files
 .classpath
 .project
 .settings/
 
+=======
+>>>>>>> parent of f9133c0... Change detail gitignore
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
