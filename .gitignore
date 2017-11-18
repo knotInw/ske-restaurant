@@ -1,5 +1,9 @@
 # Compiled class file
 *.class
+*.ctxt
+*.temp
+bin/
+build/
 
 # Log file
 *.log
@@ -8,11 +12,8 @@
 *.ctxt
 
 # Eclipse project files
-
 .classpath
-
 .project
-
 .settings/
 
 # Mobile Tools for Java (J2ME)
