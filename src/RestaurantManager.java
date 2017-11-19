@@ -15,20 +15,12 @@ import java.util.Scanner;
 public class RestaurantManager {
 	private static String inputFile = "src/data/menu.txt";
 
-	private static String outputFile = "src/data/order.txt";
-
 	private static List<MenuRecord> menu = new ArrayList<>();
-
 	private static List<OrderRecord> order = new ArrayList<>();
-
 	private static List<String> name = new ArrayList<>();
-
 	private static List<Double> price = new ArrayList<>();
-
 	private static List<Integer> check = new ArrayList<>();
-
 	private static List<Integer> quantities = new ArrayList<>();
-
 	public static void fileReader() {
 
 		try {
@@ -96,34 +88,10 @@ public class RestaurantManager {
 		}
 	}
 
-	public static void billPrint() {
+	public static void receiptPrint() {
 		for (int a = 0; a < order.size(); a++) {
 			System.out.println(order.get(a));
 		}
-	}
-
-	public static void logSave() throws IOException {
-		System.lineSeparator();
-
-		DateFormat dateFormat = new SimpleDateFormat(" yyyy/MM/dd HH:mm:ss ");
-
-		Date date = new Date();
-
-		FileWriter writer = new FileWriter(outputFile);
-
-		BufferedWriter bw = new BufferedWriter(writer);
-
-		bw.write("--------------------------");
-		bw.write(dateFormat.format(date));
-		bw.write("--------------------------");
-		bw.newLine();
-		for (int a = 0; a < order.size(); a++) {
-			bw.write(order.get(a).toString());
-			bw.newLine();
-		}
-		bw.write("------------------------------------------------------------------------------");
-		bw.newLine();
-		bw.close();
 	}
 	
 	public static void main(String[] args){
