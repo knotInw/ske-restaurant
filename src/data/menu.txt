@@ -1,0 +1,9 @@
+#  Format of menu is Description; price
+
+Cheese Pizza;220.0
+Pepporoni Pizza;220.0
+Pizza with mushroom;250.0
+Spaghetti with tomato sauce;95.0
+Spaghetti with cream sauce;95.0
+Ice Tea;20.0
+Drinking water;10.0
